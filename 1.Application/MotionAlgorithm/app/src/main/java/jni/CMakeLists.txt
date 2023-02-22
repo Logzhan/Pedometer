@@ -6,7 +6,12 @@ add_library( # Sets the name of the library.
 
              # Provides a relative path to your source file(s).
              native-lib.cpp
+	     	 src/Pedometer.c
         )
+include_directories(
+	        ${CMAKE_SOURCE_DIR}/include
+		)
+
 find_library( # Sets the name of the path variable.
               log-lib
 
